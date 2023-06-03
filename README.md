@@ -1,9 +1,12 @@
 # Adversarial Block Drop Attack（ABD）
 # Transferable Adversarial Examples against Vision Transformers via Adversarial Block Drop
-![9{W_0%Y4~T6N%7DYD7 `}TG](https://github.com/zhouhuipeng/AdversarialBlockDrop/assets/27478201/ae93fb9d-61fa-4448-97b2-9c2e9bc83e66)
+Full paper：https://github.com/zhouhuipeng/AdversarialBlockDrop/blob/main/Transferable%20Adversarial%20Examples%20against%20Vision%20Transformers%20via%20Adversarial%20Block%20Drop.pdf
+
+![fig1](https://github.com/zhouhuipeng/AdversarialBlockDrop/assets/27478201/f430d604-1847-46ca-b731-8ba40e336e1e)
 
 ![@W$D6YAFU{${3PW @ RF3P9](https://github.com/zhouhuipeng/AdversarialBlockDrop/assets/27478201/a5e99c38-be29-46ba-a724-ef3e02a2d519)
 
+## Abstract
 Vision Transformers (ViTs) have shown impressive performance in various vision tasks, which has aroused scholarly interest in studying adversarial example generation and transferability on ViTs. ViT has architecture with self-attention at its core, which is entirely different from traditional convolutional neural networks (CNNs). However, existing adversarial attacks have limited effect on ViTs due to neglecting these architectural features. To address this issue, we propose a self-attention oriented Adversarial Block Drop (ABD) method to generate transferable adversarial examples by skipping attention mechanism from partial blocks. The ViT encoder consists of multiple blocks that are consistent architectures consisting of a self-attentive layer and a feed-forward layer. Specifically, we tailor our approach to this architecture, enhancing self-attention uncertainty by dropping some of the blocks during inference and thus fooling the model decisions. This exploits a unique but widely used architectural feature in the transformer model that can be used as a general attack pattern. Extensive experiments using multiple popular transformers on ImageNet datasets show that the proposed ABD significantly outperforms other baseline methods. Our approach can greatly improve the transferability between ViTs and from ViTs to both CNNs and MLPs, demonstrating the true generalization potential of ViTs in the adversarial space.
 
 ## Experiments
